@@ -1,0 +1,2 @@
+# mortalkingdoms
+A wiki
