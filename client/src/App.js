@@ -1,5 +1,5 @@
-// client/src/App.js
 import React from "react";
+// Components
 
 function App() {
   const [data, setData] = React.useState(null);
