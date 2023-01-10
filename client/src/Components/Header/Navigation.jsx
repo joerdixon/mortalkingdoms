@@ -1,8 +1,15 @@
 import React from 'react';
+import mklogo from '../../assets/icons/mklogo.png'
 
 function Navigation() {
 return(
-<h1>Functional Navigation</h1>
+    <nav>
+        <a href="">Link</a>
+        <a href="">Link</a>
+        <a href=""><img src={mklogo} alt="Mortal Kingdoms Logo" /></a>
+        <a href="">Link</a>
+        <a href="">Link</a>
+    </nav>
 )
 };
 
