@@ -21,7 +21,6 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Header />
-        <Navigation />
         <Artifacts />
         <Characters />
         <History />
