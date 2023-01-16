@@ -12,7 +12,7 @@ function App() {
   const [data, setData] = React.useState(null);
 
   React.useEffect(() => {
-    fetch("/api/char/")
+    fetch("/api/location/")
       .then((res) => res.json())
       .then((data) => setData(data[0].name));
   }, []);
