@@ -12,12 +12,12 @@ function App() {
   const [data, setData] = React.useState(null);
 
   React.useEffect(() => {
-    fetch("/api/hi")
+    fetch("/api/char/")
       .then((res) => res.json())
-      .then((data) => setData(data.message));
+      .then((data) => setData(data[0].name));
   }, []);
 
-  return (
+  return (  
     <div className="App">
       <header className="App-header">
         <Header />
