@@ -1,12 +1,12 @@
-// Artifacts
+// Locations
 
 const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection.js');
 
-class Artifact extends Model {}
+class Location extends Model {}
 
-Artifact.init(
+Location.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -18,13 +18,16 @@ Artifact.init(
     age: {
         type: DataTypes.INTEGER,
     },
+    // Description of the land and a summary of its inhabitants.
     description: {
         type: DataTypes.TEXT,
     },
-    power: {
+    // How many people live here?
+    population: {
         type: DataTypes.INTEGER,
     },
-    owner: {
+    // Which continent are we in?
+    continent: {
         type: DataTypes.STRING,
         allowNull: true
     }
@@ -35,4 +38,4 @@ Artifact.init(
   }
 );
 
-module.exports = Artifact;
+module.exports = Location;
