@@ -2,6 +2,7 @@
 const express = require("express");
 const path = require('path');
 const routes = require('./routes');
+const sequelize = require('./config/connection')
 
 const PORT = process.env.PORT || 3001;
 
@@ -17,6 +18,9 @@ app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
 });
 
-app.listen(PORT, () => {
-  console.log(`Server listening on ${PORT}`);
-});
+sequelize.sync({force:false}).then( () => {
+  app.listen(PORT, () => {
+    console.log(`Server listening on ${PORT}`);
+  });
+}
+)
