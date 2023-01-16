@@ -37,7 +37,7 @@ Character.init(
         // Weight in pounds (and meters?)
         weight: {
             type: DataTypes.INTEGER,
-       f },
+        },
         // Who are they closely affiliated with.
         faction: {
             type: DataTypes.STRING,
