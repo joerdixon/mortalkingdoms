@@ -1,7 +1,8 @@
 const router = require('express').Router();
 
 const {
-    getArtifacts
+    getArtifacts,
+    getArtifact
 } = require('../../controllers/artifactController')
 
 router.get('/hi', (req, res) => {
@@ -10,8 +11,10 @@ router.get('/hi', (req, res) => {
     } catch (err) {
         res.status(500).json({err:err})
     }
-})
+})  
 
 router.route('/').get(getArtifacts)
+
+router.route('/:name').get(getArtifact)
 
 module.exports = router;

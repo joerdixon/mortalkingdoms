@@ -4,8 +4,8 @@ const characterRoutes = require('./characterRoutes');
 const artifactRoutes = require('./artifactRoutes');
 const locationRoutes = require('./locationRoutes');
 
-router.use("/character", characterRoutes)
-router.use("/artifact", artifactRoutes)
-router.use("/location", locationRoutes)
+router.use("/characters", characterRoutes)
+router.use("/artifacts", artifactRoutes)
+router.use("/locations", locationRoutes)
 
 module.exports = router;
