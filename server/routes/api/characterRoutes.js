@@ -1,7 +1,8 @@
 const router = require('express').Router();
 
 const {
-    getCharacters
+    getCharacters,
+    getCharacter
 } = require('../../controllers/characterController')
 
 router.get('/hi', (req, res) => {
@@ -13,5 +14,8 @@ router.get('/hi', (req, res) => {
 })
 
 router.route('/').get(getCharacters)
+
+router.route('/:name').get(getCharacter)
+
 
 module.exports = router;
