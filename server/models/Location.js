@@ -18,12 +18,15 @@ Location.init(
     age: {
         type: DataTypes.INTEGER,
     },
+    name: {
+      type: DataTypes.STRING,
+    },
     // Description of the land and a summary of its inhabitants.
-    description: {
+    desc: {
         type: DataTypes.TEXT,
     },
     // How many people live here?
-    population: {
+    pop: {
         type: DataTypes.INTEGER,
     },
     // Which continent are we in?

@@ -1,1 +1,10 @@
-[]
+[
+    {
+        "name": "The Cathedral Wall",
+        "shape": "Shield",
+        "age": "40",
+        "desc": "Shield of unimaginable piety",
+        "power": 4,
+        "owner": "Rakurai"
+    }
+]

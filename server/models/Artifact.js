@@ -14,11 +14,17 @@ Artifact.init(
       allowNull: false,
       autoIncrement: true
     },
+    name: {
+      type: DataTypes.STRING,
+    },
+    shape: {
+      type: DataTypes.STRING,
+    },
     // Age in years
     age: {
         type: DataTypes.INTEGER,
     },
-    description: {
+    desc: {
         type: DataTypes.TEXT,
     },
     power: {

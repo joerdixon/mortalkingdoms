@@ -1,1 +1,12 @@
-[]
+[
+    {
+        "name": "Titus Drathmore",
+        "epitaph": "The Iron Fist",
+        "age": 78,
+        "desc": "super evil big bad gru type",
+        "height": 74,
+        "weight": 130,
+        "faction": "Drathmore Empire",
+        "pc": true
+    }
+]

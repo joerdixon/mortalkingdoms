@@ -27,7 +27,7 @@ Character.init(
             type: DataTypes.INTEGER,
         },
         // Character description
-        description: {
+        desc: {
             type: DataTypes.TEXT
         },
         // Height in inches (and meters?)
@@ -39,7 +39,7 @@ Character.init(
             type: DataTypes.INTEGER,
        f },
         // Who are they closely affiliated with.
-        affiliation: {
+        faction: {
             type: DataTypes.STRING,
         },
         // Are they a player character?

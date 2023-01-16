@@ -1,1 +1,9 @@
-[]
+[
+    {
+        "age": 1000,
+        "name": "Austere",
+        "desc": "Land of Nobles and Cowards",
+        "pop": 4000000,
+        "continent": "continent"
+    }
+]
