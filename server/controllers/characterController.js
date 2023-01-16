@@ -1,4 +1,4 @@
-const {Character} = require('../models');
+const { Character } = require('../models');
 
 async function getCharacters(req, res) {
     try {
@@ -6,7 +6,7 @@ async function getCharacters(req, res) {
         return res.status(200).json(characterData);
     } catch (err) {
         console.log(err);
-        return res.status(500).json({msg: 'An error occurred retrieving all character data.'});
+        return res.status(500).json({ msg: 'An error occurred retrieving all character data.' });
     }
 }
 
