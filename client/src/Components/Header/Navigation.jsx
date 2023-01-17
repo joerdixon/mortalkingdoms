@@ -11,11 +11,6 @@ return(
         <Link to='/'><img src={mklogo} alt="Mortal Kingdoms Logo" className='w-20 mt-6' /></Link>
         <Link to='/map'>Map</Link>
         <Link to='/history'>History</Link>
-        {/* <a href="">Artifacts</a>
-        <a href="">People</a>
-        <a href=""><img src={mklogo} alt="Mortal Kingdoms Logo" className='w-20 mt-6' /></a>
-        <a href="">Map</a>
-        <a href="">Link</a> */}
     </nav>
 )
 };

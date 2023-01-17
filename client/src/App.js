@@ -25,9 +25,12 @@ function App() {
 
   return (
     <div className="App">
+      {/* The Router object contains all routes and links */}
       <BrowserRouter>
         <div>
+          {/* Links to the different routes are held in the Navigation component. */}
           <Navigation />
+          {/* All Pages */} 
           <div id='routeContainer'>
             <Routes>
               <Route path="/" element={<Home />}/>
@@ -39,15 +42,6 @@ function App() {
           </div>
         </div>
       </BrowserRouter>
-      {/* <header className="App-header">
-        <Header />
-        <Artifacts />
-        <Characters />
-        <History />
-        <Home />
-        <Map />
-        <p>{!data ? "Loading..." : data}</p>
-      </header> */}
     </div>
   );
 }
