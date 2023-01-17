@@ -10,7 +10,7 @@ return(
         <Link to='/characters'>Characters</Link>
         <Link to='/'><img src={mklogo} alt="Mortal Kingdoms Logo" className='w-20 mt-6' /></Link>
         <Link to='/map'>Map</Link>
-        <Link to='/history'>History</Link>
+        <Link to='/locations'>Locations</Link>
     </nav>
 )
 };
