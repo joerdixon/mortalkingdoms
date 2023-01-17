@@ -2,23 +2,23 @@ import React from 'react';
 import api from '../../../utils/api';
 
 function Locations() {
-    const [characters, setCharacters] = React.useState(null);
+    const [locations, setLocations] = React.useState(null);
 
         // Whenever we re-render
         React.useEffect(() => {
             // Hit the api
-            async function getCharacters() {
-                let data = await api.getAllCharacters();
+            async function getLocations() {
+                let data = await api.getAllLocations();
                 // This is only showing the name of the first character
-                setCharacters(data[0].name)
+                setLocations(data[0].name)
             }
-            getCharacters();
+            getLocations();
         }, []);
 
 return(
     <div>
 <h1>Functional Locations</h1>
-<p>{characters}</p>
+<p>{locations}</p>
     </div>
 )
 };

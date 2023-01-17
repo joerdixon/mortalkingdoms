@@ -2,23 +2,23 @@ import React from 'react';
 import api from '../../../utils/api';
 
 function Artifacts() {
-    const [characters, setCharacters] = React.useState(null)
+    const [artifacts, setArtifacts] = React.useState(null)
 
     // Whenever we re-render
     React.useEffect(() => {
         // Hit the api
-        async function getCharacters() {
-            let data = await api.getAllCharacters();
+        async function getArtifacts() {
+            let data = await api.getAllArtifacts();
             // This is only showing the name of the first character
-            setCharacters(data[0].name)
+            setArtifacts(data[0].name)
         }
-        getCharacters();
+        getArtifacts();
     }, []);
 
     return (
         <div>
             <h1>Functional Artifacts</h1>
-            <p>{characters}</p>
+            <p>{artifacts}</p>
         </div>
     )
 };
