@@ -5,16 +5,12 @@ const {
     getArtifact
 } = require('../../controllers/artifactController')
 
-router.get('/hi', (req, res) => {
-    try {
-        res.status(200).json({message: 'hi joe'})
-    } catch (err) {
-        res.status(500).json({err:err})
-    }
-})  
-
+// Get all artifacts
+// @ api/artifacts
 router.route('/').get(getArtifacts)
 
+// Get one artifact
+// @ api/artifacts/:name
 router.route('/:name').get(getArtifact)
 
 module.exports = router;

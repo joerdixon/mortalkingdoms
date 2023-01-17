@@ -5,16 +5,12 @@ const {
     getCharacter
 } = require('../../controllers/characterController')
 
-router.get('/hi', (req, res) => {
-    try {
-        res.status(200).json({message: 'hi joe'})
-    } catch (err) {
-        res.status(500).json({err:err})
-    }
-})
-
+// Get all characters
+// @ api/characters
 router.route('/').get(getCharacters)
 
+// Get one character
+// @ api/characters/:name
 router.route('/:name').get(getCharacter)
 
 

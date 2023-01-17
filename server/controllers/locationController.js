@@ -1,5 +1,6 @@
 const { Location } = require('../models');
 
+// Get all locations
 async function getLocations(req, res) {
     try {
         const locationData = await Location.findAll();
@@ -10,7 +11,7 @@ async function getLocations(req, res) {
     }
 }
 
-// Get one artifact
+// Get one location
 async function getLocation(req, res) {
     try {
         const locationData = await Location.findOne({where: {name: req.params.name}})

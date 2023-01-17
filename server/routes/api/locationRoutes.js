@@ -5,16 +5,12 @@ const {
     getLocation
 } = require('../../controllers/locationController')
 
-router.get('/hi', (req, res) => {
-    try {
-        res.status(200).json({message: 'hi joe'})
-    } catch (err) {
-        res.status(500).json({err:err})
-    }
-})
-
+// Get all locations
+// @ api/locations
 router.route('/').get(getLocations)
 
+// Get one location
+// @ api/locations/:name
 router.route('/:name').get(getLocation)
 
 module.exports = router;
