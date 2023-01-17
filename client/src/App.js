@@ -1,5 +1,11 @@
 import React from "react";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom"
 // Components
+// TODO: is there any real use for the header?
 import Header from './Components/Header/Header.jsx';
 import Navigation from './Components/Header/Navigation.jsx';
 import Artifacts from "./Components/Page/Artifacts/Artifacts.jsx";
@@ -17,9 +23,23 @@ function App() {
       .then((data) => setData(data[0].name));
   }, []);
 
-  return (  
+  return (
     <div className="App">
-      <header className="App-header">
+      <BrowserRouter>
+        <div>
+          <Navigation />
+          <div id='routeContainer'>
+            <Routes>
+              <Route path="/" element={<Home />}/>
+              <Route path="/artifacts" element={<Artifacts />}/>
+              <Route path="/characters" element={<Characters />}/>
+              <Route path="/map" element={<Map />}/>
+              <Route path="/history" element={<History />}/>
+            </Routes>
+          </div>
+        </div>
+      </BrowserRouter>
+      {/* <header className="App-header">
         <Header />
         <Artifacts />
         <Characters />
@@ -27,7 +47,7 @@ function App() {
         <Home />
         <Map />
         <p>{!data ? "Loading..." : data}</p>
-      </header>
+      </header> */}
     </div>
   );
 }
