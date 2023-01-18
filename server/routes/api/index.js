@@ -2,10 +2,10 @@ const router = require('express').Router();
 
 const characterRoutes = require('./characterRoutes');
 const artifactRoutes = require('./artifactRoutes');
-const locationRoutes = require('./locationRoutes');
+const factionRoutes = require('./factionRoutes');
 
 router.use("/characters", characterRoutes)
 router.use("/artifacts", artifactRoutes)
-router.use("/locations", locationRoutes)
+router.use("/factions", factionRoutes)
 
 module.exports = router;

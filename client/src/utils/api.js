@@ -24,9 +24,9 @@ const api = {
         return res.json();
     },
 
-    // Locations
-    getAllLocations: async () => {
-        const res = await fetch(`${url}/api/locations`, {
+    // Factions
+    getAllFactions: async () => {
+        const res = await fetch(`${url}/api/factions`, {
             method: 'GET',
             headers: {
                 'Content-type': "application/json"

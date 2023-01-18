@@ -1,12 +1,12 @@
-// Locations
+// Factions
 
 const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection.js');
 
-class Location extends Model {}
+class Faction extends Model {}
 
-Location.init(
+Faction.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -41,4 +41,4 @@ Location.init(
   }
 );
 
-module.exports = Location;
+module.exports = Faction;
