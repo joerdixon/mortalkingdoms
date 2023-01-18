@@ -1,4 +1,4 @@
-// Artifacts
+// Artifacts here is a quick change
 
 const { Model, DataTypes } = require('sequelize');
 
