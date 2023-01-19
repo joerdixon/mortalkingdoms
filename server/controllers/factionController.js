@@ -1,4 +1,4 @@
-const { Faction } = require('../models');
+const { Faction, Character } = require('../models');
 
 // Get all factions
 async function getFactions(req, res) {
@@ -27,8 +27,23 @@ async function getFaction(req, res) {
     }
 }
 
+async function getFactionMembers(req, res) {
+    try {
+        const memberData = await Faction.findAll({
+            include: {
+                model: Character
+        }
+        })
+        res.status(200).json(memberData);
+    } catch (err) {
+        console.log(err);
+        return res.status(500).json({msg: "An error occured retrieving this faction."})
+    }
+}
+
 module.exports = {
     getFactions,
-    getFaction
+    getFaction,
+    getFactionMembers
 }
 

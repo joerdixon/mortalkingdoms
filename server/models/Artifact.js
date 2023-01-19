@@ -8,12 +8,12 @@ class Artifact extends Model {}
 
 Artifact.init(
   {
-    id: {
-      type: DataTypes.INTEGER,
-      primaryKey: true,
-      allowNull: false,
-      autoIncrement: true
-    },
+    // id: {
+    //   type: DataTypes.INTEGER,
+    //   primaryKey: true,
+    //   allowNull: false,
+    //   autoIncrement: true
+    // },
     // Name of the artifact
     name: {
       type: DataTypes.STRING,

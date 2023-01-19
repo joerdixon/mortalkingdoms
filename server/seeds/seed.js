@@ -7,9 +7,9 @@ const factionData = require('./factionData.json');
 
 async function seedMK() {
     await sequelize.sync({ force: true });
+    const factions = await Faction.bulkCreate(factionData);
     const characters = await Character.bulkCreate(characterData);
     const artifacts = await Artifact.bulkCreate(artifactData);
-    const Factions = await Faction.bulkCreate(factionData);
 }
 
 seedMK();

@@ -6,7 +6,8 @@
         "desc": "super evil big bad gru type",
         "height": 74,
         "weight": 130,
-        "pc": false
+        "pc": false,
+        "factionId": 1
     },
     {
         "name": "Rakurai",
@@ -15,6 +16,7 @@
         "desc": "Sovreign of the Delhalls",
         "height": 90,
         "weight": 450,
-        "pc": true
+        "pc": true,
+        "factionId": 2
     }
 ]

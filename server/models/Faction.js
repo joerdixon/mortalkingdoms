@@ -8,12 +8,12 @@ class Faction extends Model {}
 
 Faction.init(
   {
-    id: {
-      type: DataTypes.INTEGER,
-      primaryKey: true,
-      allowNull: false,
-      autoIncrement: true
-    },
+    // id: {
+    //   type: DataTypes.INTEGER,
+    //   primaryKey: true,
+    //   allowNull: false,
+    //   autoIncrement: true
+    // },
     // Age in years
     age: {
         type: DataTypes.INTEGER,

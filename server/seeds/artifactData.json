@@ -1,17 +1,18 @@
 [
     {
-        "name": "The cathedral Wall",
+        "name": "The Cathedral Wall",
         "shape": "Shield",
         "age": "40",
         "desc": "Shield of unimaginable piety",
         "power": 4,
-        "CharacterId": 1
+        "characterId": 2
     },
     {
         "name": "The Gearheart",
         "shape": "Engine",
         "age": "800",
         "desc": "Perpetual engine",
-        "power": 9
+        "power": 9,
+        "characterId": 1
     }
 ]
