@@ -14,16 +14,16 @@ async function getFactions(req, res) {
 // Get one faction
 async function getFaction(req, res) {
     try {
-        const factionData = await Faction.findOne({where: {name: req.params.name}})
+        const factionData = await Faction.findOne({ where: { name: req.params.name } })
         if (factionData === null) {
             console.log("Not found")
-            res.status(200).json({msg: "faction not found"})
+            res.status(200).json({ msg: "faction not found" })
         } else {
             res.status(200).json(factionData)
         }
     } catch (err) {
         console.log(err);
-        return res.status(500).json({msg: "An error occured retrieving this faction."})
+        return res.status(500).json({ msg: "An error occured retrieving this faction." })
     }
 }
 
@@ -32,12 +32,12 @@ async function getFactionMembers(req, res) {
         const memberData = await Faction.findAll({
             include: {
                 model: Character
-        }
+            }
         })
         res.status(200).json(memberData);
     } catch (err) {
         console.log(err);
-        return res.status(500).json({msg: "An error occured retrieving this faction."})
+        return res.status(500).json({ msg: "An error occured retrieving this faction and it's members." })
     }
 }
 
@@ -45,5 +45,5 @@ module.exports = {
     getFactions,
     getFaction,
     getFactionMembers
-}
+};
 

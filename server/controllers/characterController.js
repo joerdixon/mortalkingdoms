@@ -1,9 +1,13 @@
-const { Character } = require('../models');
+const { Character, Artifact } = require('../models');
 
 // Get all characters 
 async function getCharacters(req, res) {
     try {
-        const characterData = await Character.findAll();
+        const characterData = await Character.findAll({
+            include: {
+                model: Artifact
+            }
+        });
         return res.status(200).json(characterData);
     } catch (err) {
         console.log(err);
