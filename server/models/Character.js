@@ -8,12 +8,8 @@ class Character extends Model { }
 
 Character.init(
     {
-        // id: {
-        //     type: DataTypes.INTEGER,
-        //     primaryKey: true,
-        //     allowNull: false,
-        //     autoIncrement: true
-        // },
+        // Sequelize gives us an id by default so we don't need to define it in the model.
+
         // First and/or Last
         name: {
             type: DataTypes.STRING,
@@ -42,13 +38,6 @@ Character.init(
         pc: {
             type: DataTypes.BOOLEAN,
         },
-        // FactionId: {
-        //     type: DataTypes.INTEGER,
-        //     references: {
-        //         model: "faction",
-        //         key: "id"
-        //     }
-        // }
     },
     {
         sequelize,

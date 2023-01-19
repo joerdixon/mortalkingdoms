@@ -8,12 +8,8 @@ class Faction extends Model {}
 
 Faction.init(
   {
-    // id: {
-    //   type: DataTypes.INTEGER,
-    //   primaryKey: true,
-    //   allowNull: false,
-    //   autoIncrement: true
-    // },
+    // Sequelize gives us an id by default so we don't need to define it in the model.
+
     // Age in years
     age: {
         type: DataTypes.INTEGER,

@@ -8,12 +8,8 @@ class Artifact extends Model {}
 
 Artifact.init(
   {
-    // id: {
-    //   type: DataTypes.INTEGER,
-    //   primaryKey: true,
-    //   allowNull: false,
-    //   autoIncrement: true
-    // },
+    // Sequelize gives us an id by default so we don't need to define it in the model.
+
     // Name of the artifact
     name: {
       type: DataTypes.STRING,
@@ -34,13 +30,6 @@ Artifact.init(
     power: {
         type: DataTypes.INTEGER,
     },
-    // characterId: {
-    //   type: DataTypes.INTEGER,
-    //   references: {
-    //     model: "character",
-    //     key: "id"
-    //   }
-    // }
   },
   {
     sequelize,
