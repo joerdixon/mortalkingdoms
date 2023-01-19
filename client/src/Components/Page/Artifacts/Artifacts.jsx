@@ -2,19 +2,24 @@ import React from 'react';
 import api from '../../../utils/api';
 
 function Artifacts() {
-    const [artifacts, setArtifacts] = React.useState([])
+    const [artifacts, setArtifacts] = React.useState(null)
 
-    // Whenever we re-render
     React.useEffect(() => {
-        // Hit the api
+
+        // Reset the artifact state.
+        setArtifacts([])
+
         async function getArtifacts() {
+            // Hit the api for all artifacts.
             let data = await api.getAllArtifacts();
-            await data.forEach(element => {
-                console.log(element)
-                setArtifacts([...artifacts, element.name])
-            });
-            // This is only showing the name of the first character
+            // For each artifact.
+            for (let i = 0; i < data.length; i++) {
+                const nextArtifact = await data[i].name;
+                // Add each artifact to the state.
+                setArtifacts((prevArtifacts) => [...prevArtifacts, nextArtifact]);
+            }
         }
+
         getArtifacts();
     }, []);
 

@@ -38,17 +38,22 @@ Character.init(
         weight: {
             type: DataTypes.INTEGER,
         },
-        // Who are they closely affiliated with.
-        faction: {
-            type: DataTypes.STRING,
-        },
         // Are they a player character?
         pc: {
             type: DataTypes.BOOLEAN,
-        }
+        },
+        // FactionId: {
+        //     type: DataTypes.INTEGER,
+        //     references: {
+        //         model: "faction",
+        //         key: "id"
+        //     }
+        // }
     },
     {
         sequelize,
+        modelName: "character",
+        timestamps: false
     }
 );
 

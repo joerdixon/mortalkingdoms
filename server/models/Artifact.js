@@ -34,15 +34,18 @@ Artifact.init(
     power: {
         type: DataTypes.INTEGER,
     },
-    // Who controls or has possesion of the item.
-    owner: {
-        type: DataTypes.STRING,
-        allowNull: true
-    }
-
+    // characterId: {
+    //   type: DataTypes.INTEGER,
+    //   references: {
+    //     model: "character",
+    //     key: "id"
+    //   }
+    // }
   },
   {
     sequelize,
+    modelName: "artifact",
+    timestamps: false
   }
 );
 
