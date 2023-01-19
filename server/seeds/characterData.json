@@ -6,7 +6,8 @@
         "desc": "super evil big bad gru type",
         "height": 74,
         "weight": 130,
-        "pc": false
+        "pc": false,
+        "factionId": 2
     },
     {
         "name": "Rakurai",

@@ -1,5 +1,6 @@
 const router = require('express').Router();
 
+// Import our db queries from controllers
 const {
     getArtifacts,
     getArtifact
