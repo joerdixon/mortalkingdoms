@@ -6,7 +6,15 @@
         "desc": "super evil big bad gru type",
         "height": 74,
         "weight": 130,
-        "faction": "Drathmore Empire",
+        "pc": false
+    },
+    {
+        "name": "Rakurai",
+        "epitaph": "The Storm Mother's Legacy",
+        "age": 364,
+        "desc": "Sovreign of the Delhalls",
+        "height": 90,
+        "weight": 450,
         "pc": true
     }
 ]

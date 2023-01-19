@@ -1,18 +1,17 @@
 [
     {
-        "name": "The Cathedral Wall",
+        "name": "The cathedral Wall",
         "shape": "Shield",
         "age": "40",
         "desc": "Shield of unimaginable piety",
         "power": 4,
-        "owner": "Rakurai"
+        "CharacterId": 1
     },
     {
         "name": "The Gearheart",
         "shape": "Engine",
         "age": "800",
         "desc": "Perpetual engine",
-        "power": 9,
-        "owner": "The Axiom"
+        "power": 9
     }
 ]

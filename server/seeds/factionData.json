@@ -1,9 +1,16 @@
 [
     {
         "age": 1000,
-        "name": "Austere",
+        "name": "Bennet Kingdoms",
         "desc": "Land of Nobles and Cowards",
         "pop": 4000000,
-        "continent": "continent"
+        "continent": "Not Austere"
+    },
+    {
+        "age": 800,
+        "name": "Drathmore Empire",
+        "desc": "Imperial empire hellbent on expansion",
+        "pop": 2800000,
+        "continent": "Austere"
     }
 ]

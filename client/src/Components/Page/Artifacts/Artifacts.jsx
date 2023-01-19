@@ -6,18 +6,21 @@ function Artifacts() {
 
     React.useEffect(() => {
 
+        // Reset the artifact state.
         setArtifacts([])
 
         async function getArtifacts() {
+            // Hit the api for all artifacts.
             let data = await api.getAllArtifacts();
+            // For each artifact.
             for (let i = 0; i < data.length; i++) {
                 const nextArtifact = await data[i].name;
+                // Add each artifact to the state.
                 setArtifacts((prevArtifacts) => [...prevArtifacts, nextArtifact]);
             }
         }
 
         getArtifacts();
-        // Hit the api
     }, []);
 
     return (
