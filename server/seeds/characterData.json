@@ -7,7 +7,7 @@
         "height": 74,
         "weight": 130,
         "pc": false,
-        "factionId": 1
+        "factionId": 2
     },
     {
         "name": "Rakurai",
@@ -16,7 +16,6 @@
         "desc": "Sovreign of the Delhalls",
         "height": 90,
         "weight": 450,
-        "pc": true,
-        "factionId": 2
+        "pc": true
     }
 ]

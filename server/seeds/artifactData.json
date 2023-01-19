@@ -5,14 +5,13 @@
         "age": "40",
         "desc": "Shield of unimaginable piety",
         "power": 4,
-        "characterId": 1
+        "characterId": 2
     },
     {
         "name": "The Gearheart",
         "shape": "Engine",
         "age": "800",
         "desc": "Perpetual engine",
-        "power": 9,
-        "characterId": 1
+        "power": 9
     }
 ]
