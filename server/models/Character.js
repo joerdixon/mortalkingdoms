@@ -14,9 +14,10 @@ Character.init(
         name: {
             type: DataTypes.STRING,
         },
-        // Abyssal Liege, Hallowed One, the Great, etc...
+        // Abyssal Liege, Hallowed One, the Great, etc... Some people don't have one.
         epitaph: {
             type: DataTypes.STRING,
+            allowNull: true
         },
         // Age in years.
         age: {
@@ -38,6 +39,14 @@ Character.init(
         pc: {
             type: DataTypes.BOOLEAN,
         },
+        // Are they still alive.
+        alive: {
+            type: DataTypes.BOOLEAN,
+        },
+        // How do they make their living?
+        profession: {
+            type: DataTypes.STRING,
+        }
     },
     {
         sequelize,

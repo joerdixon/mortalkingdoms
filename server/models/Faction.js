@@ -14,6 +14,7 @@ Faction.init(
     age: {
         type: DataTypes.INTEGER,
     },
+    // What is the name of this faction?
     name: {
       type: DataTypes.STRING,
     },
@@ -26,7 +27,7 @@ Faction.init(
         type: DataTypes.INTEGER,
     },
     // Which continent are we in?
-    continent: {
+    region: {
         type: DataTypes.STRING,
         allowNull: true
     }

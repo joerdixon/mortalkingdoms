@@ -4,14 +4,14 @@
         "shape": "Shield",
         "age": "40",
         "desc": "Shield of unimaginable piety",
-        "power": 4,
-        "characterId": 2
+        "characterId": 2,
+        "createdBy": "???"
     },
     {
         "name": "The Gearheart",
         "shape": "Engine",
         "age": "800",
         "desc": "Perpetual engine",
-        "power": 9
+        "createdBy": "Tolund"
     }
 ]

@@ -4,7 +4,7 @@ const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection.js');
 
-class Artifact extends Model {}
+class Artifact extends Model { }
 
 Artifact.init(
   {
@@ -20,15 +20,15 @@ Artifact.init(
     },
     // Age in years
     age: {
-        type: DataTypes.INTEGER,
+      type: DataTypes.INTEGER,
     },
-    // Description of the item and what it does.
+    // Description of the item, it's purpose, and what it does.
     desc: {
-        type: DataTypes.TEXT,
+      type: DataTypes.TEXT,
     },
-    // Power level? pending...
-    power: {
-        type: DataTypes.INTEGER,
+    // Who originally made this item?
+    createdBy: {
+      type: DataTypes.STRING,
     },
   },
   {

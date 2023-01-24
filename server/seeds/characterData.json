@@ -7,7 +7,9 @@
         "height": 74,
         "weight": 130,
         "pc": false,
-        "factionId": 2
+        "alive": false,
+        "factionId": 2,
+        "profession": "Emp"
     },
     {
         "name": "Rakurai",
@@ -16,6 +18,19 @@
         "desc": "Sovreign of the Delhalls",
         "height": 90,
         "weight": 450,
-        "pc": true
+        "alive": false,
+        "pc": true,
+        "profession": "Warrior"
+    },
+    {
+        "name": "Iboh",
+        "epitaph": "of the Wheel",
+        "age": 121,
+        "desc": "Planefaring druid currently out of commission",
+        "height": 75,
+        "weight": 170,
+        "alive": true,
+        "pc": true,
+        "profession": "Wheel"
     }
 ]

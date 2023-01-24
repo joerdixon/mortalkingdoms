@@ -4,13 +4,13 @@
         "name": "Bennett Kingdoms",
         "desc": "Land of Nobles and Cowards",
         "pop": 4000000,
-        "continent": "Not Austere"
+        "region": "Not Austere"
     },
     {
         "age": 800,
         "name": "Drathmore Empire",
         "desc": "Imperial empire hellbent on expansion",
         "pop": 2800000,
-        "continent": "Austere"
+        "region": "Austere"
     }
 ]
