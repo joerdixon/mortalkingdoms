@@ -13,13 +13,11 @@ function Artifacts() {
     const [artifacts, setArtifacts] = React.useState([])
 
     React.useEffect(() => {
-        // TODO: This is running twice everytime.
+        // TODO: This is running twice everytime.   
         async function fetchArtifacts() {
             const data = await api.getAllArtifacts();
-            for (let i = 0; i < data.length; i++) {
-                const card = data[i].name;
-                setArtifacts((prevArtifacts) => [...prevArtifacts, card]);
-            }
+            console.log(data);
+            setArtifacts(data)
         }
         fetchArtifacts();
     }, []);
@@ -27,7 +25,15 @@ function Artifacts() {
     return (
         <div>
             <h1>Functional Artifacts</h1>
-            <p>{artifacts}</p>
+            <div>
+                {artifacts.map((artifact, index) => {
+                    return(
+                    <p key={index}>
+                        {artifact.name}
+                    </p>
+                    )
+                })}
+            </div>
         </div>
     )
 };
