@@ -15,13 +15,13 @@ function Characters() {
 
     // Whenever we re-render
     React.useEffect(() => {
-        async function getCharacters() {
+        async function fetchCharacters() {
             // Query all characters from the API
             let data = await api.getAllCharacters();
             // We get back an array so we just need to set the state to whatever we get back.
             setCharacters(data)
         }
-        getCharacters();
+        fetchCharacters();
     }, []);
 
 

@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* CSS Variables */
 :root {
   --main-bg: #111;
   --alt-bg: #222;
