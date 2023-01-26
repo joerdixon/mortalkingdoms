@@ -30,11 +30,24 @@ function Characters() {
             <div>
                 {/* For each character stored in state */}
                 {characters.map((character, index) => {
+                    // Format the player character
+                    let pc;
+                    character.pc ? pc = "Yes" : pc = "No"
+
+                    let alive;
+                    character.alive ? alive = "Yes" : alive = "No"
                     // Return an element
                     return (
-                        <p key={index}>
-                            {character.name}, {character.age}
-                        </p>
+                        <div className='border' key={index}>
+                            <h1 className='text-2xl'>{character.name}, {character.epitaph}</h1>
+                            <p>Profession: {character.profession}</p>
+                            <p>Description: {character.desc}</p>
+                            <p>Age: {character.age}</p>
+                            <p>Height: {character.height}</p>
+                            <p>Weight: {character.weight}</p>
+                            <p>Player Character: {pc}</p>
+                            <p>Alive: {alive}</p>
+                        </div>
                     )
                 })}
             </div>
