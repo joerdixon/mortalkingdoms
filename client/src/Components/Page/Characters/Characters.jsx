@@ -31,10 +31,10 @@ function Characters() {
                 {/* For each character stored in state */}
                 {characters.map((character, index) => {
                     // Return an element
-                    return(
-                    <p key={index}>
-                        {character.name}
-                    </p>
+                    return (
+                        <p key={index}>
+                            {character.name}, {character.age}
+                        </p>
                     )
                 })}
             </div>

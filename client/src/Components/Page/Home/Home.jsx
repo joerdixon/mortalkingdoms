@@ -5,9 +5,9 @@ import React from 'react';
 // It should contain a cool splash image and links to the coolest parts of the website and a devlog.
 
 function Home() {
-return(
-<h1>Functional Home</h1>
-)
+    return (
+        <h1>Functional Home</h1>
+    )
 };
 
 export default Home;

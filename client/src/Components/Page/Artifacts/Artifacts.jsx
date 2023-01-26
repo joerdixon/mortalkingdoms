@@ -31,10 +31,10 @@ function Artifacts() {
                 {/* For each artifact stored in state */}
                 {artifacts.map((artifact, index) => {
                     // Return an element
-                    return(
-                    <p key={index}>
-                        {artifact.name}
-                    </p>
+                    return (
+                        <p key={index}>
+                            {artifact.name}, {artifact.age}
+                        </p>
                     )
                 })}
             </div>

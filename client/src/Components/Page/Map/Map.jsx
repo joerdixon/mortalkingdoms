@@ -7,9 +7,9 @@ import React from 'react';
 // There will be a toggleable view showing the political sphere of influence for each faction.
 
 function Map() {
-return(
-<h1>Functional Map</h1>
-)
+    return (
+        <h1>Map</h1>
+    )
 };
 
 export default Map;

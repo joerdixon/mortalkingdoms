@@ -5,7 +5,6 @@ import {
   Route,
 } from "react-router-dom"
 // Components
-// TODO: is there any real use for the header?
 // import Header from './Components/Header/Header.jsx';
 import Navigation from './Components/Header/Navigation.jsx';
 import Artifacts from "./Components/Page/Artifacts/Artifacts.jsx";
@@ -22,14 +21,14 @@ function App() {
         <div>
           {/* Links to the different routes are held in the Navigation component. */}
           <Navigation />
-          {/* All Pages */} 
+          {/* All Pages */}
           <div id='routeContainer'>
             <Routes>
-              <Route path="/artifacts" element={<Artifacts />}/>
-              <Route path="/characters" element={<Characters />}/>
-              <Route path="/" element={<Home />}/>
-              <Route path="/map" element={<Map />}/>
-              <Route path="/factions" element={<Factions />}/>
+              <Route path="/artifacts" element={<Artifacts />} />
+              <Route path="/characters" element={<Characters />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/map" element={<Map />} />
+              <Route path="/factions" element={<Factions />} />
             </Routes>
           </div>
         </div>
