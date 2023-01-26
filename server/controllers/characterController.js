@@ -1,14 +1,15 @@
-const { Character, Artifact } = require('../models');
+const { Character, Artifact, Faction } = require('../models');
 
 // Get all characters 
 async function getCharacters(req, res) {
     try {
         // Query the database for all characters
         const characterData = await Character.findAll({
-            include: {
+            include: [
                 // Include the artifacts held by characters
-                model: Artifact
-            }
+                { model: Artifact },
+                // Include the faction that character is part of.
+                { model: Faction }]
         });
         return res.status(200).json(characterData);
     } catch (err) {
@@ -23,9 +24,12 @@ async function getCharacter(req, res) {
         // Query the database for character with a specific name
         const characterData = await Character.findOne({
             where: { name: req.params.name },
-            // Include any artifacts that characters holds.
-            include: { model: Artifact }
-        })
+            include: [
+                // Include the artifacts held by characters
+                { model: Artifact },
+                // Include the faction that character is part of.
+                { model: Faction }]
+        });
         // If the character is not found, notify the user.
         if (characterData === null) {
             console.log("Not found")

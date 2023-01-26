@@ -1,10 +1,14 @@
-const { Artifact } = require('../models');
+const { Artifact, Character } = require('../models');
 
 // Get all artifacts
 async function getArtifacts(req, res) {
     try {
-        // Query the database for all artifacts.
-        const artifactData = await Artifact.findAll();
+        // Query the database for all artifacts
+        const artifactData = await Artifact.findAll({
+            include: 
+            // Include the owner (if there is one)
+            {model: Character}
+        });
         return res.status(200).json(artifactData)
     } catch (err) {
         console.log(err);
