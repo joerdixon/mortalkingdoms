@@ -30,15 +30,19 @@ function Characters() {
             <div>
                 {/* For each character stored in state */}
                 {characters.map((character, index) => {
-                    // Format the player character
+                    // Populate any artifacts they have.
+                    let artifacts = [];
+                    character.artifacts[0] ? artifacts = character.artifacts : artifacts = "No"
+                    console.log(artifacts);
+                    // Format Player Character
                     let pc;
                     character.pc ? pc = "Yes" : pc = "No"
-
+                    // Formatting alive.
                     let alive;
                     character.alive ? alive = "Yes" : alive = "No"
                     // Return an element
                     return (
-                        <div className='border' key={index}>
+                        <div className='border-4' key={index}>
                             <h1 className='text-2xl'>{character.name}, {character.epitaph}</h1>
                             <p>Profession: {character.profession}</p>
                             <p>Description: {character.desc}</p>
@@ -47,6 +51,7 @@ function Characters() {
                             <p>Weight: {character.weight}</p>
                             <p>Player Character: {pc}</p>
                             <p>Alive: {alive}</p>
+                            <p>Known Artifacts: {artifacts[0].name}</p>
                         </div>
                     )
                 })}
