@@ -8,25 +8,37 @@ import api from '../../../utils/api';
 // This includes any characters or artifacts beholden to that faction.
 
 function Factions() {
-    const [factions, setFactions] = React.useState(null);
+    const [factions, setFactions] = React.useState([]);
 
-        // Whenever we re-render
-        React.useEffect(() => {
-            // Hit the api
-            async function getFactions() {
-                let data = await api.getAllFactions();
-                // This is only showing the name of the first character
-                setFactions(data[0].name)
-            }
-            getFactions();
-        }, []);
+    // Whenever we re-render
+    React.useEffect(() => {
+        async function getFactions() {
+            // Query all factions from the API
+            let data = await api.getAllFactions();
+            // We get back an array so we just need to set the state to whatever we get back.
+            setFactions(data)
+        }
+        getFactions();
+    }, []);
 
-return(
-    <div>
-<h1>Functional Factions</h1>
-<p>{factions}</p>
-    </div>
-)
+    return (
+        <div>
+            <div>
+                <h1>Factions</h1>
+                <div>
+                    {/* For each faction stored in state */}
+                    {factions.map((faction, index) => {
+                        // Return an element
+                        return (
+                            <p key={index}>
+                                {faction.name}
+                            </p>
+                        )
+                    })}
+                </div>
+            </div>
+        </div>
+    )
 };
 
 export default Factions;

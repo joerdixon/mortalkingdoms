@@ -15,10 +15,10 @@ function Characters() {
 
     // Whenever we re-render
     React.useEffect(() => {
-        // Hit the api
         async function getCharacters() {
+            // Query all characterss from the API
             let data = await api.getAllCharacters();
-            // This is only showing the name of the first character
+            // We get back an array so we just need to set the state to whatever we get back.
             setCharacters(data)
         }
         getCharacters();
@@ -26,7 +26,7 @@ function Characters() {
 
     return (
         <div>
-            <h1>Functional characters</h1>
+            <h1>Characters</h1>
             <div>
                 {/* For each character stored in state */}
                 {characters.map((character, index) => {

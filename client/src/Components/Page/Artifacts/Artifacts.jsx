@@ -26,7 +26,7 @@ function Artifacts() {
 
     return (
         <div>
-            <h1>Functional Artifacts</h1>
+            <h1>Artifacts</h1>
             <div>
                 {/* For each artifact stored in state */}
                 {artifacts.map((artifact, index) => {
