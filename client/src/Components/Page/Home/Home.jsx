@@ -5,8 +5,11 @@ import React from 'react';
 // It should contain a cool splash image and links to the coolest parts of the website and a devlog.
 
 function Home() {
+    // TODO: Update home to contain actual content, the hero will stay.
     return (
-        <h1>Functional Home</h1>
+        <div className='flex flex-col items-center justify-end h-80'>
+            <h1 className='text-6xl'>Welcome to the Mortal Kingdoms</h1>
+        </div>
     )
 };
 
