@@ -16,7 +16,7 @@ function Characters() {
     // Whenever we re-render
     React.useEffect(() => {
         async function getCharacters() {
-            // Query all characterss from the API
+            // Query all characters from the API
             let data = await api.getAllCharacters();
             // We get back an array so we just need to set the state to whatever we get back.
             setCharacters(data)
@@ -53,6 +53,7 @@ function Characters() {
                     if (character.artifacts[0]) {
                         artifacts = character.artifacts;
                     }
+                    // Format the artifacts
                     artifacts = formatArtifacts(artifacts)
                     // Format Player Character
                     let pc;
@@ -62,7 +63,7 @@ function Characters() {
                     character.alive ? alive = "Yes" : alive = "No"
                     // Return an element
                     return (
-                        <div className='border-4' key={index}>
+                        <div className='p-4' key={index}>
                             <h1 className='text-2xl italic'>{character.name}, {character.epitaph}</h1>
                             <p>Profession: {character.profession}</p>
                             <p>Description: {character.desc}</p>
