@@ -11,7 +11,7 @@ import api from '../../../utils/api';
 
 function Characters() {
     // All characters are stored here. (Not quite)
-    const [characters, setCharacters] = React.useState(null);
+    const [characters, setCharacters] = React.useState([]);
 
     // Whenever we re-render
     React.useEffect(() => {
@@ -19,15 +19,25 @@ function Characters() {
         async function getCharacters() {
             let data = await api.getAllCharacters();
             // This is only showing the name of the first character
-            setCharacters(data[0].name)
+            setCharacters(data)
         }
         getCharacters();
     }, []);
 
     return (
         <div>
-            <h1>Functional Characters</h1>
-            <p>{characters}</p>
+            <h1>Functional characters</h1>
+            <div>
+                {/* For each character stored in state */}
+                {characters.map((character, index) => {
+                    // Return an element
+                    return(
+                    <p key={index}>
+                        {character.name}
+                    </p>
+                    )
+                })}
+            </div>
         </div>
     )
 };

@@ -10,15 +10,17 @@ import api from '../../../utils/api';
 // This includes the character that owns the artifact (if there is one.)
 
 function Artifacts() {
+    // Start with an empty array
     const [artifacts, setArtifacts] = React.useState([])
 
     React.useEffect(() => {
-        // TODO: This is running twice everytime.   
         async function fetchArtifacts() {
+            // Query all artifacts from the API
             const data = await api.getAllArtifacts();
-            console.log(data);
+            // We get back an array so we just need to set the state to whatever we get back.
             setArtifacts(data)
         }
+        // Call the function
         fetchArtifacts();
     }, []);
 
@@ -26,7 +28,9 @@ function Artifacts() {
         <div>
             <h1>Functional Artifacts</h1>
             <div>
+                {/* For each artifact stored in state */}
                 {artifacts.map((artifact, index) => {
+                    // Return an element
                     return(
                     <p key={index}>
                         {artifact.name}
