@@ -24,6 +24,24 @@ function Characters() {
         getCharacters();
     }, []);
 
+
+    const formatArtifacts = (artifactArray) => {
+
+        // Convert objects array into elements array
+        const artifactCards = artifactArray.map((artifact, index) => {
+            return (
+                <div>{artifact.name}</div>
+            )
+        })
+
+        // If it's empty, return none.
+        if (artifactCards.length === 0) {
+            return (<div>None</div>)
+        } else {
+            return (<div>{artifactCards}</div>)
+        }
+    }
+
     return (
         <div>
             <h1>Characters</h1>
@@ -32,8 +50,10 @@ function Characters() {
                 {characters.map((character, index) => {
                     // Populate any artifacts they have.
                     let artifacts = [];
-                    character.artifacts[0] ? artifacts = character.artifacts : artifacts = "No"
-                    console.log(artifacts);
+                    if (character.artifacts[0]) {
+                        artifacts = character.artifacts;
+                    }
+                    artifacts = formatArtifacts(artifacts)
                     // Format Player Character
                     let pc;
                     character.pc ? pc = "Yes" : pc = "No"
@@ -43,7 +63,7 @@ function Characters() {
                     // Return an element
                     return (
                         <div className='border-4' key={index}>
-                            <h1 className='text-2xl'>{character.name}, {character.epitaph}</h1>
+                            <h1 className='text-2xl italic'>{character.name}, {character.epitaph}</h1>
                             <p>Profession: {character.profession}</p>
                             <p>Description: {character.desc}</p>
                             <p>Age: {character.age}</p>
@@ -51,7 +71,10 @@ function Characters() {
                             <p>Weight: {character.weight}</p>
                             <p>Player Character: {pc}</p>
                             <p>Alive: {alive}</p>
-                            <p>Known Artifacts: {artifacts[0].name}</p>
+                            <p className='text-xl italic'>Known Artifacts:</p>
+                            <div>
+                                {artifacts}
+                            </div>
                         </div>
                     )
                 })}
