@@ -30,9 +30,13 @@ function Factions() {
                     {factions.map((faction, index) => {
                         // Return an element
                         return (
-                            <p key={index}>
-                                {faction.name}
-                            </p>
+                            <div className='p-4' key={index}>
+                                <h1 className='text-2xl italic'>{faction.name}</h1>
+                                <p>Age: {faction.age}</p>
+                                <p>Population: {faction.pop}</p>
+                                <p>Region: {faction.region}</p>
+                                <p>Description: {faction.desc}</p>
+                            </div>
                         )
                     })}
                 </div>
