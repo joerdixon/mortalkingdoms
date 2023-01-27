@@ -1,4 +1,5 @@
 import React from 'react';
+import ArtifactCard from './ArtifactCard';
 import api from '../../../utils/api';
 
 // The Artifacts page will house all artifacts found in the database.
@@ -30,14 +31,17 @@ function Artifacts() {
             <div>
                 {/* For each artifact stored in state */}
                 {artifacts.map((artifact, index) => {
-                    // Return an element
+                    // Return an ArtifactCard
                     return (
-                        <div className='p-4' key={index}>
-                            <h1 className='text-2xl italic'>{artifact.name}</h1>
-                            <p>Object: {artifact.shape}</p>
-                            <p>Age: {artifact.age}</p>
-                            <p>Description: {artifact.desc}</p>
-                            <p>Creator: {artifact.createdBy}</p>
+                        // <div className='p-4' key={index}>
+                        //     <h1 className='text-2xl italic'>{artifact.name}</h1>
+                        //     <p>Object: {artifact.shape}</p>
+                        //     <p>Age: {artifact.age}</p>
+                        //     <p>Description: {artifact.desc}</p>
+                        //     <p>Creator: {artifact.createdBy}</p>
+                        // </div>
+                        <div key={index}>
+                            <ArtifactCard artifact={artifact}/>
                         </div>
                     )
                 })}

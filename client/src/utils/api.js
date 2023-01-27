@@ -24,6 +24,16 @@ const api = {
         return res.json();
     },
 
+    getOneArtifact: async (singleArtifact) => {
+        const res = await fetch(`${url}/api/artifacts/${singleArtifact}`, {
+            method: 'GET',
+            headers: {
+                'Content-type': "application/json"
+            }
+        })
+        return res.json();
+    },
+
     // Factions
     getAllFactions: async () => {
         const res = await fetch(`${url}/api/factions`, {
