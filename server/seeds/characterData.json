@@ -9,7 +9,7 @@
         "pc": false,
         "alive": false,
         "factionId": 2,
-        "profession": "Emp"
+        "profession": "Emperor"
     },
     {
         "name": "Rakurai",
@@ -25,12 +25,24 @@
     {
         "name": "Iboh",
         "epitaph": "of the Wheel",
-        "age": 121,
+        "age": 142,
         "desc": "Planefaring druid currently out of commission",
         "height": 75,
         "weight": 170,
         "alive": true,
         "pc": true,
         "profession": "Wheel"
+    },
+    {
+        "name": "Jericho Layent",
+        "epitaph": "Self-exile",
+        "age": 31,
+        "desc": "Wizard travelling the world, trying to escape the treachery of his house",
+        "height": 65,
+        "weight": 150,
+        "alive": true,
+        "pc": true,
+        "factionId": 1,
+        "profession": "Wizard"
     }
 ]

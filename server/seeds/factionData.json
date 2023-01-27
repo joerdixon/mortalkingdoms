@@ -1,7 +1,7 @@
 [
     {
         "age": 1000,
-        "name": "Bennett Kingdoms",
+        "name": "Bennett Kingdom",
         "desc": "Land of Nobles and Cowards",
         "pop": 4000000,
         "region": "Not Austere"
@@ -11,6 +11,20 @@
         "name": "Drathmore Empire",
         "desc": "Imperial empire hellbent on expansion",
         "pop": 2800000,
+        "region": "Austere"
+    },
+    {
+        "age": 3000,
+        "name": "The Wizards League",
+        "desc": "Largely impartial cadre of wizards from around the world",
+        "pop": 25000,
+        "region": "Austere"
+    },
+    {
+        "age": 423,
+        "name": "Gold Leaf Trading Company",
+        "desc": "Wealthy trading company profiting from goings-on in the Mortal Kingdoms",
+        "pop": 14000,
         "region": "Austere"
     }
 ]

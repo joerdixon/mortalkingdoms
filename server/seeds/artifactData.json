@@ -13,5 +13,19 @@
         "age": "800",
         "desc": "Perpetual engine",
         "createdBy": "Tolund"
+    },
+    {
+        "name": "The Cosmos Within Reach",
+        "shape": "Sword",
+        "age": "???",
+        "desc": "Ancient magical sword originally wielded by druids, sister sword to The Heavens Crashing Down",
+        "createdBy": "???"
+    },
+    {
+        "name": "The Heavens Crashing Down",
+        "shape": "Sword",
+        "age": "???",
+        "desc": "Ancient magical sword originally wielded by druids, sister sword to The Cosmos Within Reach",
+        "createdBy": "???"
     }
 ]
