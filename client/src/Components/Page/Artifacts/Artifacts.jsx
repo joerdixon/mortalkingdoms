@@ -33,15 +33,8 @@ function Artifacts() {
                 {artifacts.map((artifact, index) => {
                     // Return an ArtifactCard
                     return (
-                        // <div className='p-4' key={index}>
-                        //     <h1 className='text-2xl italic'>{artifact.name}</h1>
-                        //     <p>Object: {artifact.shape}</p>
-                        //     <p>Age: {artifact.age}</p>
-                        //     <p>Description: {artifact.desc}</p>
-                        //     <p>Creator: {artifact.createdBy}</p>
-                        // </div>
                         <div key={index}>
-                            <ArtifactCard artifact={artifact}/>
+                            <ArtifactCard artifact={artifact} />
                         </div>
                     )
                 })}

@@ -1,5 +1,11 @@
 import React from 'react';
 
+// The CharacterCard component will be a expandable card representing a single Character from the database.
+
+// The Character on the card will be passed in as a prop.
+
+// TODO: Make standard and expanded layout for card.
+
 const formatArtifacts = (artifactArray) => {
 
     // Convert objects array into elements array

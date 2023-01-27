@@ -8,7 +8,7 @@ function Home() {
     // TODO: Character, Artifact, and Faction of the day sections.
     return (
         <div className='flex flex-col items-center justify-end h-80'>
-            <h1 className='text-6xl'>Welcome to the Mortal Kingdoms</h1> 
+            <h1 className='text-6xl'>Welcome to the Mortal Kingdoms</h1>
         </div>
     )
 };

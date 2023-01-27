@@ -31,7 +31,7 @@ function Factions() {
                     {factions.map((faction, index) => {
                         // Return an element
                         return (
-                            <FactionCard faction={faction}/>
+                            <FactionCard faction={faction} />
                         )
                     })}
                 </div>

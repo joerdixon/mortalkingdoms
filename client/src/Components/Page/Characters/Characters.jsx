@@ -33,9 +33,9 @@ function Characters() {
                 {characters.map((character, index) => {
                     // Return a CharacterCard
                     return (
-                    <div key={index}>     
-                        <CharacterCard character={character}/>
-                    </div>
+                        <div key={index}>
+                            <CharacterCard character={character} />
+                        </div>
                     )
                 })}
             </div>

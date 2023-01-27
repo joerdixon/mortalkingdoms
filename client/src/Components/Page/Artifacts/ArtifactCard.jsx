@@ -4,6 +4,8 @@ import React from 'react';
 
 // The Artifact on the card will be passed in as a prop.
 
+// TODO: Make standard and expanded layout for card.
+
 function ArtifactCard({ artifact }) {
 
     return (
