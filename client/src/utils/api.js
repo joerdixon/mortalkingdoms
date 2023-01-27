@@ -13,6 +13,17 @@ const api = {
         return res.json();
     },
 
+    getOneCharacter: async (singleCharacter) => {
+        const res = await fetch(`${url}/api/characters/${singleCharacter}`, {
+            method: 'GET',
+            headers: {
+                'Content-type': "application/json"
+            }
+        })
+        return res.json();
+    },
+
+
     // Artifacts
     getAllArtifacts: async () => {
         const res = await fetch(`${url}/api/artifacts`, {
@@ -37,6 +48,16 @@ const api = {
     // Factions
     getAllFactions: async () => {
         const res = await fetch(`${url}/api/factions`, {
+            method: 'GET',
+            headers: {
+                'Content-type': "application/json"
+            }
+        })
+        return res.json();
+    },
+
+    getOneFaction: async (singleFaction) => {
+        const res = await fetch(`${url}/api/factions/${singleFaction}`, {
             method: 'GET',
             headers: {
                 'Content-type': "application/json"
