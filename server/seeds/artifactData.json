@@ -17,14 +17,14 @@
     {
         "name": "The Cosmos Within Reach",
         "shape": "Sword",
-        "age": "???",
+        "age": "1200",
         "desc": "Ancient magical sword originally wielded by druids, sister sword to The Heavens Crashing Down",
         "createdBy": "???"
     },
     {
         "name": "The Heavens Crashing Down",
         "shape": "Sword",
-        "age": "???",
+        "age": "1200",
         "desc": "Ancient magical sword originally wielded by druids, sister sword to The Cosmos Within Reach",
         "createdBy": "???"
     }
