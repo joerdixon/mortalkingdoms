@@ -59,8 +59,8 @@ function CharacterCard({ character }) {
             {/* Description */}
             <p>Description: {character.desc}</p>
             {/* Artifacts */}
-            <p className='text-xl italic'>Known Artifacts:</p>
             <div>
+                <p className='text-xl italic'>Known Artifacts:</p>
                 {artifacts}
             </div>
         </div>

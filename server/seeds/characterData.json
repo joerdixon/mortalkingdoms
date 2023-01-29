@@ -56,5 +56,27 @@
         "pc": true,
         "factionId": 5,
         "profession": "Wizard"
+    },
+    {
+        "name": "Braldohr",
+        "epitaph": "Steward of his Ancestors",
+        "age": 130,
+        "desc": "Legendary among his people for his scalp collection",
+        "height": 45,
+        "weight": 170,
+        "alive": true,
+        "pc": true,
+        "profession": "Barbarian"
+    },
+    {
+        "name": "Gaius",
+        "epitaph": "the Mighty",
+        "age": 32,
+        "desc": "Strongest man in Forn",
+        "height": 65,
+        "weight": 220,
+        "alive": true,
+        "pc": false,
+        "profession": "Handyman"
     }
 ]
