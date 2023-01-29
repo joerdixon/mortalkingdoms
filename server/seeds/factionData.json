@@ -26,5 +26,12 @@
         "desc": "Wealthy trading company profiting from goings-on in the Mortal Kingdoms",
         "pop": 14000,
         "region": "Austere"
+    },
+    {
+        "age": 30000,
+        "name": "Church of Pelor",
+        "desc": "Church of the Sun full of devout footpriests and missionaries.",
+        "pop": 5000000,
+        "region": "Everywhere"
     }
 ]

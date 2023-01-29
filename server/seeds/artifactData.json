@@ -27,5 +27,20 @@
         "age": "1200",
         "desc": "Ancient magical sword originally wielded by druids, sister sword to The Cosmos Within Reach",
         "createdBy": "???"
+    },
+    {
+        "name": "The Book of Storms",
+        "shape": "Book",
+        "age": "1200",
+        "desc": "Lifes work and spellbook of the Stormmother",
+        "createdBy": "Stormmother",
+        "characterId": 2
+    },
+    {
+        "name": "Greystaff",
+        "shape": "Broom",
+        "age": "1200",
+        "desc": "Flying broom taken off a hag near the Delhalls",
+        "createdBy": "???"
     }
 ]
