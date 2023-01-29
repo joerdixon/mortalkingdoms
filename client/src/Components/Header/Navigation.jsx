@@ -8,7 +8,7 @@ function Navigation() {
         <nav className='flex justify-evenly items-center w-screen bg-[#111] h-[50px]'>
             <Link className='w-20 text-center hover:translate-y-1 transition-all' to='/artifacts'>Artifacts</Link>
             <Link className='w-20 text-center hover:translate-y-1 transition-all' to='/characters'>People</Link>
-            <Link className='w-20 text-center hover:translate-y-1 transition-all' to='/'><img src={mklogo} alt="Mortal Kingdoms Logo" className='w-20 mt-6' /></Link>
+            <Link className='w-20 text-center hover:translate-y-0 hover:scale-105 transition-all' to='/'><img src={mklogo} alt="Mortal Kingdoms Logo" className='w-20 mt-6' /></Link>
             <Link className='w-20 text-center hover:translate-y-1 transition-all' to='/map'>Map</Link>
             <Link className='w-20 text-center hover:translate-y-1 transition-all' to='/factions'>Factions</Link>
         </nav>

@@ -13,14 +13,14 @@ const formatArtifacts = (artifactArray) => {
     // Convert objects array into elements array
     const artifactCards = artifactArray.map((artifact, index) => {
         return (
-            <ArtifactCard artifact={artifact}/>
+            <ArtifactCard artifact={artifact} />
         )
     })
     // If it's empty, return none.
     if (artifactCards.length === 0) {
         return (<div>None</div>)
     } else {
-        return (<div className=''>{artifactCards}</div>)
+        return (<div className='flex'>{artifactCards}</div>)
     }
 }
 
@@ -41,15 +41,24 @@ function CharacterCard({ character }) {
     character.alive ? alive = "Yes" : alive = "No"
     // Return an element
     return (
-        <div className='p-4'>
-            <h1 className='text-2xl italic'>{character.name}, {character.epitaph}</h1>
-            <p>Profession: {character.profession}</p>
+        <div className='p-4 border flex flex-col space-between'>
+            {/* Nameplate */}
+            <div>
+                <h1 className='text-2xl text-center italic'>{character.name}</h1>
+                <h2 className='text-center italic font-semibold'>{character.epitaph}</h2>
+            </div>
+            {/* Stat Block */}
+            <div>
+                <p>Age: {character.age}</p>
+                <p>Height: {character.height}</p>
+                <p>Weight: {character.weight}</p>
+                <p>Profession: {character.profession}</p>
+                <p>Alive: {alive}</p>
+                <p>Player Character: {pc}</p>
+            </div>
+            {/* Description */}
             <p>Description: {character.desc}</p>
-            <p>Age: {character.age}</p>
-            <p>Height: {character.height}</p>
-            <p>Weight: {character.weight}</p>
-            <p>Player Character: {pc}</p>
-            <p>Alive: {alive}</p>
+            {/* Artifacts */}
             <p className='text-xl italic'>Known Artifacts:</p>
             <div>
                 {artifacts}

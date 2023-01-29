@@ -10,7 +10,6 @@ async function seedMK() {
     const factions = await Faction.bulkCreate(factionData);
     const characters = await Character.bulkCreate(characterData);
     const artifacts = await Artifact.bulkCreate(artifactData);
-    process.end
 }
 
 seedMK();

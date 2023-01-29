@@ -54,7 +54,7 @@
         "weight": 150,
         "alive": true,
         "pc": true,
-        "factionId": 1,
+        "factionId": 5,
         "profession": "Wizard"
     }
 ]

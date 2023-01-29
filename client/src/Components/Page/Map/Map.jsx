@@ -8,7 +8,7 @@ import React from 'react';
 
 function Map() {
     return (
-        <h1>Map</h1>
+        <h1 className='text-center text-4xl  pt-60'>Coming Soon</h1>
     )
 };
 
