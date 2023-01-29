@@ -11,7 +11,7 @@ function ArtifactCard({ artifact }) {
     return (
         <div>
             <div className='p-4'>
-                <h1 className='text-2xl italic'>{artifact.name}</h1>
+                <h1 className='text-2xl italic font-serif'>{artifact.name}</h1>
                 <p>Object: {artifact.shape}</p>
                 <p>Age: {artifact.age}</p>
                 <p>Description: {artifact.desc}</p>

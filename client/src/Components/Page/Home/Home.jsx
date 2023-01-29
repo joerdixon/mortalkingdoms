@@ -7,9 +7,9 @@ import React from 'react';
 function Home() {
     // TODO: Character, Artifact, and Faction of the day sections.
     return (
-        <div className='flex flex-col items-center justify-end h-80'>
+        <div className='flex flex-col h-[80vh] items-center justify-evenly'>
             <h1 className='text-6xl'>Welcome to the Mortal Kingdoms</h1>
-            <p>The Mortal Kingdoms was created in 20XX by CSank as a campaign setting and has evolved into a sprawling world with secrets to uncover and many untold tales waiting to unfold.</p>
+            <p className='mt-20'>The Mortal Kingdoms was created in 20XX by CSank as a campaign setting and has evolved into a sprawling world with secrets to uncover and many untold tales waiting to unfold.</p>
             <p>This website serves as a living archive for the history of the Mortal Kingdoms.</p>
         </div>
     )

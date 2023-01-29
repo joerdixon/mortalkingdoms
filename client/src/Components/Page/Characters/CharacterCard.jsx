@@ -1,25 +1,26 @@
 import React from 'react';
+import ArtifactCard from '../Artifacts/ArtifactCard';
 
 // The CharacterCard component will be a expandable card representing a single Character from the database.
 
 // The Character on the card will be passed in as a prop.
 
 // TODO: Make standard and expanded layout for card.
+// TODO: Add formatting function for height and weight, currently just coming in as an int.
+
 
 const formatArtifacts = (artifactArray) => {
-
     // Convert objects array into elements array
     const artifactCards = artifactArray.map((artifact, index) => {
         return (
-            <div>{artifact.name}</div>
+            <ArtifactCard artifact={artifact}/>
         )
     })
-
     // If it's empty, return none.
     if (artifactCards.length === 0) {
         return (<div>None</div>)
     } else {
-        return (<div>{artifactCards}</div>)
+        return (<div className=''>{artifactCards}</div>)
     }
 }
 
