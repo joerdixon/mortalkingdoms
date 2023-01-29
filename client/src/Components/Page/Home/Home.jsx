@@ -9,6 +9,8 @@ function Home() {
     return (
         <div className='flex flex-col items-center justify-end h-80'>
             <h1 className='text-6xl'>Welcome to the Mortal Kingdoms</h1>
+            <p>The Mortal Kingdoms was created in 20XX by CS as a campaign setting and has evolved into a sprawling world with secrets to uncover and many untold tales waiting to unfold.</p>
+            <p>This website serves as a living archive for the history of the Mortal Kingdoms.</p>
         </div>
     )
 };
