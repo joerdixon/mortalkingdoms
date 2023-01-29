@@ -13,22 +13,28 @@ Artifact.init(
     // Name of the artifact
     name: {
       type: DataTypes.STRING,
+      allowNull: false,
     },
     // Object if it was nonmagical. Shield, staff, warship, flask, etc
     shape: {
       type: DataTypes.STRING,
+      allowNull: false,
     },
     // Age in years
+    // null will be shown as ??? clientside.
     age: {
       type: DataTypes.INTEGER,
+      allowNull: true,
     },
     // Description of the item, it's purpose, and what it does.
     desc: {
       type: DataTypes.TEXT,
+      allowNull: false,
     },
     // Who originally made this item?
     createdBy: {
       type: DataTypes.STRING,
+      allowNull: true,
     },
   },
   {
