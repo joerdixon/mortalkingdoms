@@ -1,5 +1,7 @@
 // Characters (People)
 
+// null will be shown as ??? clientside.
+
 const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection.js');

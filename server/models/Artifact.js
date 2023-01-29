@@ -1,5 +1,7 @@
 // Artifacts here is a quick change
 
+// null will be shown as ??? clientside.
+
 const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection.js');
@@ -21,7 +23,6 @@ Artifact.init(
       allowNull: false,
     },
     // Age in years
-    // null will be shown as ??? clientside.
     age: {
       type: DataTypes.INTEGER,
       allowNull: true,
