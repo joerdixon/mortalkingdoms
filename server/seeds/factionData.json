@@ -1,23 +1,23 @@
 [
     {
         "age": 1000,
-        "name": "Bennett Kingdom",
+        "name": "The Bennett Kingdom",
         "desc": "Land of Nobles and Cowards",
-        "pop": 4000000,
+        "pop": 10000000,
         "region": "Not Austere"
     },
     {
-        "age": 800,
-        "name": "Drathmore Empire",
+        "age": 30,
+        "name": "The Drathmore Empire",
         "desc": "Imperial empire hellbent on expansion",
-        "pop": 2800000,
+        "pop": 3000000,
         "region": "Austere"
     },
     {
-        "age": 3000,
+        "age": 800,
         "name": "The Wizards League",
         "desc": "Largely impartial cadre of wizards from around the world",
-        "pop": 25000,
+        "pop": 20,
         "region": "Austere"
     },
     {
@@ -31,6 +31,13 @@
         "age": 30000,
         "name": "Church of Pelor",
         "desc": "Church of the Sun full of devout footpriests and missionaries.",
+        "pop": 5000000,
+        "region": "Everywhere"
+    },
+    {
+        "age": 30000,
+        "name": "The Land of Soh",
+        "desc": "Desert",
         "pop": 5000000,
         "region": "Everywhere"
     }
