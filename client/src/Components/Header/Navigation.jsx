@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import mklogo from '../../assets/icons/mklogo.png'
 
+// TODO: Update hover effect
 
 function Navigation() {
     return (
