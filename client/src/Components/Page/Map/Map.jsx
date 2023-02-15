@@ -6,6 +6,8 @@ import React from 'react';
 
 // There will be a toggleable view showing the political sphere of influence for each faction.
 
+// Hoverable areas will show characters within that region as well as artifacts and the prevailing faction.
+
 function Map() {
     return (
         <h1 className='text-center text-4xl  pt-60'>Coming Soon</h1>
